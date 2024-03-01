@@ -1,9 +1,9 @@
-const numberCount = 25;
-const commentCount = 30;
-const minLikesCount = 15;
-const maxLikesCount = 200;
+export const NUMBER_COUNT = 25;
+export const COMMENT_COUNT = 30;
+export const MIN_LIKES = 15;
+export const MAX_LIKES = 200;
 
-const names = [
+export const NAMES = [
   'Никита',
   'Егор',
   'Виктория',
@@ -21,7 +21,7 @@ const names = [
   'Анна'
 ];
 
-const messageUser = [
+export const MESSAGE_USER = [
   'Всё отлично!',
   'В целом всё неплохо. Но не всё.',
   'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.',
@@ -30,7 +30,7 @@ const messageUser = [
   'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!'
 ];
 
-const description = [
+export const DESCRIPTION = [
   'Красивый город',
   'Фото на пляже',
   'Вкусная еда',
@@ -39,5 +39,3 @@ const description = [
   'Котейка',
   'Отдых на море'
 ];
-
-export default [];

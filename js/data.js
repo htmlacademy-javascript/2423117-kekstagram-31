@@ -9,7 +9,7 @@ const getId = () => {
   };
 };
 
-const photosId = getId;
+const photosId = getId();
 
 const pushComment = () => ({
   id: crypto.randomUUID(Math),
@@ -19,14 +19,13 @@ const pushComment = () => ({
 });
 
 const getUserPhoto = () => ({
-  id: photosId(),
-  url: `photos/${photosId()}.jpg`,
+  id: photosId,
+  url: `photos/${photosId}.jpg`,
   description: getRandomArrayElement(DESCRIPTION),
   likes: getRandomInteger(MIN_LIKES, MAX_LIKES),
   comments: Array.from({ length: getRandomInteger(1, COMMENT_COUNT)}, pushComment)
 });
 
 const arrayCount = Array.from({ length: NUMBER_COUNT}, getUserPhoto);
-
 
 export {arrayCount};

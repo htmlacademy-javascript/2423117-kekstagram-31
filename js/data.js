@@ -25,7 +25,7 @@ const getUserPhoto = () => {
     url: `photos/${id}.jpg`,
     description: getRandomArrayElement(DESCRIPTION),
     likes: getRandomInteger(MIN_LIKES, MAX_LIKES),
-    comments: Array.from({ length: getRandomInteger(1, COMMENT_COUNT)}, pushComment)
+    comments: Array.from({ length: getRandomInteger(5, COMMENT_COUNT)}, pushComment)
   };
 };
 

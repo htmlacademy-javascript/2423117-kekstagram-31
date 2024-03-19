@@ -7,7 +7,6 @@ const createThumbnail = ({url, description, likes, comments}, pictureClickHandle
   photoElement.alt = description;
   photoElement.querySelector('.picture__comments').comments = comments;
   photoElement.querySelector('.picture__likes').likes = likes;
-
   photoElement.addEventListener('click', () => {
     pictureClickHandler({url, description, likes, comments});
   });

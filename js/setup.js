@@ -39,3 +39,8 @@ export const DESCRIPTION = [
   'Котейка',
   'Отдых на море'
 ];
+
+export const bigPicture = document.querySelector('.big-picture');
+export const socialComments = bigPicture.querySelector('.social__comments');
+export const commentsLoader = bigPicture.querySelector('.comments-loader');
+export const COMMENT_STEP = 5;
